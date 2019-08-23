@@ -25,6 +25,10 @@ In this project, we will be editing the **"behavioural_planner.py", "collision_c
 
 ![Screenshot_2](https://user-images.githubusercontent.com/30608533/63600422-371a9500-c5cc-11e9-9524-e4cdc2f11e8b.jpg)
 
+<p>
+   Once we have our path set, the next step to perform is collision checking and path selection. To compute the best feasible and collision-free path for our ego vehicle to follow. The way we performed collision checking was to use the circle based method we introduced in Module Four. In particular, we overlaid circles on top of the vehicle location at each point along the path. This generates a set of circles which gives us a conservative approximation of the ego vehicle swath. We then checked if each of the obstacle points was located within any of the circles along the path. If any of the points did fall within the circles, then this path was labeled as having a collision. We then repeated this process for each of the paths removing all of those that collided with obstacles from future consideration. Once our collision check was complete, we then selected the collision-free path whose end-point was closest to the line center line as our best path. We select this because it allows us to track the global way points along the center of the lane even if we had to veer off course temporarily due to an obstacle along our path. This choice does lead us to cut as close as possible to obstacles. So we had to be careful to ensure our collision checks were conservative with some buffer.
+</p>
+
 ### Velocity Profile Generation
 
 ![Screenshot_3](https://user-images.githubusercontent.com/30608533/63600434-3c77df80-c5cc-11e9-8845-042bee7af9fe.jpg)
