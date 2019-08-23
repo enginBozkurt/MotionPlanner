@@ -33,6 +33,11 @@ In this project, we will be editing the **"behavioural_planner.py", "collision_c
 
 ![Screenshot_3](https://user-images.githubusercontent.com/30608533/63600434-3c77df80-c5cc-11e9-8845-042bee7af9fe.jpg)
 
+<p>
+   Once we have a suitable path selected, we need to generate a velocity profile for it. We are given a reference velocity depending on the behavior we are trying to execute. If we are decelerating to a stop or staying stopped, our target velocity should be zero. Otherwise, it should be the speed limit. However, we need to take leading vehicles into consideration. Because if a leading vehicle is moving more slowly than us we may hit it. To handle this, we set our target velocity to be the minimum of the reference velocity, and the lead vehicle speed. We also need to make sure that we reach the lead vehicle speed by the time we reach the lead vehicles original location. Otherwise we risk a collision. From this information, we can now construct a ramp trajectory from our current velocity, to the target velocity along our path. If there is a lead vehicle, the end-point of the ramp profile will be the lead vehicles position less a time gap buffer. Otherwise the end-point of the ramp profile will be the end of the path.
+   
+</p>
+
 ### Behaviour Planning
 
 ![Screenshot_4](https://user-images.githubusercontent.com/30608533/63600441-413c9380-c5cc-11e9-9d7f-e11618b2f996.jpg)
