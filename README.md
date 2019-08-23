@@ -11,3 +11,4 @@ The goal of this project will be to have a **functional motion planning stack** 
 
 ### Path Generation
 
+![Screenshot_1](https://user-images.githubusercontent.com/30608533/63599898-2ddcf880-c5cb-11e9-9e9f-9db5396b37e5.jpg)
