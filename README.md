@@ -16,6 +16,11 @@ In this project, we will be editing the **"behavioural_planner.py", "collision_c
 
 ![Screenshot_1](https://user-images.githubusercontent.com/30608533/63599898-2ddcf880-c5cb-11e9-9e9f-9db5396b37e5.jpg)
 
+<p>
+   We had given you all of the required code to optimize a spiral to a given point. So all we needed to add was to extract the goal points from the way points sequence you were given. We did this by iterating through the way points and finding the closest one to the ego vehicle, and then progressing through way points until we arrived at a way point that was at least a look ahead distance away from us. The look ahead distance represents how far ahead of the vehicle we are planning during any cycle. Once this goal point is selected, we laterally offset additional goal points from the selected way point to generate a goal state set. We do this to give the car multiple options to select from, which will allow it to avoid obstacles. The lateral spacing is 90 degrees rotated away from the heading of the road at the target way point. This ensures that our planned path set conforms to the structure of the road. We then have to rotate and translate these points from the global frame to the ego vehicles frame, such that the ego vehicle is at the origin with zero heading. Once this is done, we can pass these goal points to the spiral optimizer which will then compute the path that we can use in our future planning steps.
+  
+</p>
+
 ### Collision Avoidance
 
 ![Screenshot_2](https://user-images.githubusercontent.com/30608533/63600422-371a9500-c5cc-11e9-9524-e4cdc2f11e8b.jpg)
