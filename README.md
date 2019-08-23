@@ -99,3 +99,6 @@ Windows (use alternative python commands if the command below does not work, as 
 ```
 
 
+## Final Notes:
+
+- This is the final assignment project from Motion Planning for Self-Driving Cars course of Self-Driving Cars Specialization  by University of Toronto.
