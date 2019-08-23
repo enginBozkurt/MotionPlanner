@@ -99,6 +99,17 @@ Windows (use alternative python commands if the command below does not work, as 
 ```
 
 
+### Changing the live plotter refresh rate
+- If the simulation runs slowly, you can try increasing the period at which the live plotter refreshes the plots, or disabling the live plotting altogether. Disabling the live plotting or changing its refresh rate does not affect the plot outputs at the end of the simulation.
+
+- To do this, edit the options.cfg file found in the "Course1FinalProject" folder for the relevant parameters. The following table below explains each option:
+
+| Parameter             | Description                      | Value   |
+| -------------         | -------------------------------  | ------- |
+| live_plotting         | Enable or disable live plotting. | true/false |
+| live_plotting_period  | Period (in seconds) which the live plot will refresh on screen. | seconds |
+
+
 ## Final Notes:
 
 - This is the final assignment project from Motion Planning for Self-Driving Cars course of Self-Driving Cars Specialization  by University of Toronto.
