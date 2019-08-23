@@ -42,6 +42,11 @@ In this project, we will be editing the **"behavioural_planner.py", "collision_c
 
 ![Screenshot_4](https://user-images.githubusercontent.com/30608533/63600441-413c9380-c5cc-11e9-9d7f-e11618b2f996.jpg)
 
+<p>
+   Finally, we must implement the behavioral planner for our ego vehicle. The only regulatory element we will face in this project is a stop sign, so that will be the focus of the behavioral planner. To handle it, our behavioral planner will have three states. A nominal lane following state, a decelerate to stop state, and a stay stop state. During the course of normal driving we will stay in the lane following state. Once the endpoint of our planned path crosses the stop line of a stop sign, we then switch from driving normally to decelerating to a stop at the stop point defined by that stopline. To do this, we must transition to the decelerate to stop state, and ensure our planned length provides sufficient time to decelerate comfortably. Once we've stopped we transition to the stay stopped state to make sure the car is at a complete stop at the stop sign for a fixed period of time. In this case, we choose two seconds. Once that is done, we then transition back to the lane following state, and continue with nominal driving. This completes the state machine transition cycle, and allows us to handle the presence of a stop sign along our path.
+
+</p>
+
 ## Final Results
 
 ![Screenshot_11](https://user-images.githubusercontent.com/30608533/63600723-c58f1680-c5cc-11e9-97e3-e299142ddca9.jpg)
