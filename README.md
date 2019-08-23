@@ -6,3 +6,8 @@ The goal of this project will be to have a **functional motion planning stack** 
 
 ## General Overview and some key concepts
 ![Screenshot_5](https://user-images.githubusercontent.com/30608533/63599391-29641000-c5ca-11e9-9a7d-e58788e5838b.jpg)
+
+## Solution Approach
+
+### Path Generation
+
