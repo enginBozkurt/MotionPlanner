@@ -15,9 +15,13 @@ The goal of this project will be to have a **functional motion planning stack** 
 
 ### Collision Avoidance
 
+![Screenshot_2](https://user-images.githubusercontent.com/30608533/63600422-371a9500-c5cc-11e9-9524-e4cdc2f11e8b.jpg)
 
 ### Velocity Profile Generation
 
+![Screenshot_3](https://user-images.githubusercontent.com/30608533/63600434-3c77df80-c5cc-11e9-8845-042bee7af9fe.jpg)
 
 ### Behaviour Planning
+
+![Screenshot_4](https://user-images.githubusercontent.com/30608533/63600441-413c9380-c5cc-11e9-9d7f-e11618b2f996.jpg)
 
