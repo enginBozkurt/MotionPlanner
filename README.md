@@ -7,6 +7,9 @@ The goal of this project will be to have a **functional motion planning stack** 
 ## General Overview and some key concepts
 ![Screenshot_5](https://user-images.githubusercontent.com/30608533/63599391-29641000-c5ca-11e9-9a7d-e58788e5838b.jpg)
 
+## Implementing the Motion Planner
+In this project, we will be editing the **"behavioural_planner.py", "collision_checker.py", "local_planner.py", "path_optimizer.py", and "velocity_planner.py"** class files (found inside the "PythonClient\Course4FinalProject" (for Windows) or "PythonClient/Course4FinalProject" (for Ubuntu) folder). This is where we will implement our motion planner. There are 5 main aspects of the planner you will need to implement, **behaviour planning logic, path generation, static collision checking, path selection, and velocity profile generation**
+
 ## Solution Approach
 
 ### Path Generation
