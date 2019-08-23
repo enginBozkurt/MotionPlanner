@@ -57,3 +57,28 @@ In this project, we will be editing the **"behavioural_planner.py", "collision_c
 ![forward_speed](https://user-images.githubusercontent.com/30608533/63600935-2ae30780-c5cd-11e9-9687-4288d4f2ab38.png)
 ![steer_output](https://user-images.githubusercontent.com/30608533/63600936-2e768e80-c5cd-11e9-824d-59779d0a4e54.png)
 ![throttle_output](https://user-images.githubusercontent.com/30608533/63600951-33d3d900-c5cd-11e9-9ecd-8c8db06de30d.png)
+
+
+
+## Installing and Running
+
+- Download this repository file and unpack into the subfolder folder "PythonClient" inside the "CarlaSimulator" (root) folder.
+
+### Running the CARLA simulator
+
+- In one terminal, start the CARLA simulator at a 30hz fixed time-step:
+
+Ubuntu:
+
+```console
+./CarlaUE4.sh /Game/Maps/Course4 -windowed -carla-server -benchmark -fps=30
+```
+
+Windows:
+
+```console
+CarlaUE4.exe /Game/Maps/Course4 -windowed -carla-server -benchmark -fps=30
+```
+
+- Note that both the ResX=<pixel_width> and ResY=<pixel_height> arguments can used to create a fixed size window, if you find the simulation to run too slow.
+
