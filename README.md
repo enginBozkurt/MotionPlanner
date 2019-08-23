@@ -31,3 +31,7 @@ The goal of this project will be to have a **functional motion planning stack** 
 
 ![trajectory](https://user-images.githubusercontent.com/30608533/63600798-e9eaf300-c5cc-11e9-941f-bb0437b7b519.png)
 
+
+![forward_speed](https://user-images.githubusercontent.com/30608533/63600935-2ae30780-c5cd-11e9-9687-4288d4f2ab38.png)
+![steer_output](https://user-images.githubusercontent.com/30608533/63600936-2e768e80-c5cd-11e9-824d-59779d0a4e54.png)
+![throttle_output](https://user-images.githubusercontent.com/30608533/63600951-33d3d900-c5cd-11e9-9ecd-8c8db06de30d.png)
